@@ -1,5 +1,5 @@
 /*
- * jQuery-boilerplate plugin by Rasy 0.1.0
+ * jQuery-boilerplate plugin by Rasy
  * https://github.com/rasy-js
  *
  * Author: Rasy
