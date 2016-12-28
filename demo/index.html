@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Elegant popup</title>
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../app/normalize-css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../dist/css/jquery.elegant-popup.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../assets/svg-out/css/sprite.css"> -->
+  <link rel="stylesheet" type="text/css" href="demo.css">
+  <script src="../app/jquery/dist/jquery.min.js"></script>
+  <script src="../dist/js/jquery.elegant-popup.js"></script>
+</head>
+<body>
+
+  <main class="main">
+    <form id="popup_toggle" class="elegant-popup elegant-popup--hidden">
+      <div><h3>Записаться</h3></div>
+      <div><input type="text" id="name" data-validation="required" placeholder="Имя"></div>
+      <div><input type="text" id="phone" data-validation="required" placeholder="Телефон"></div>
+      <div><input type="hidden" value=""></div>
+      <div><input type="submit" id="submit" value="Отправить"></div>
+      <!-- <div class="my-message">
+        <div class="message-load err"><p>Пожалуйста, заполните все обязательные поля!</p></div>
+      </div> -->
+    </form>
+
+    <button type="button" class="btn-popup">Заказать звонок</button>
+  </main>
+
+  <script>
+    $('.btn-popup').elegantPopup();
+  </script>
+
+</body>
+</html>
